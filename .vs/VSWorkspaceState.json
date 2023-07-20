@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BasicCRUD"
+    "\\CRUD",
+    "\\CRUD\\BasicCRUD"
   ],
-  "SelectedNode": "\\BasicCRUD",
   "PreviewInSolutionExplorer": false
 }

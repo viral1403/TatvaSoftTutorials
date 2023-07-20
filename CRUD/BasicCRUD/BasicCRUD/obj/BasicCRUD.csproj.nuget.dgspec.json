@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repos\\Tutorials\\BasicCRUD\\BasicCRUD\\BasicCRUD\\BasicCRUD.csproj": {}
+    "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD\\BasicCRUD.csproj": {}
   },
   "projects": {
-    "D:\\Repos\\Tutorials\\BasicCRUD\\BasicCRUD\\BasicCRUD\\BasicCRUD.csproj": {
+    "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD\\BasicCRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repos\\Tutorials\\BasicCRUD\\BasicCRUD\\BasicCRUD\\BasicCRUD.csproj",
+        "projectUniqueName": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD\\BasicCRUD.csproj",
         "projectName": "BasicCRUD",
-        "projectPath": "D:\\Repos\\Tutorials\\BasicCRUD\\BasicCRUD\\BasicCRUD\\BasicCRUD.csproj",
+        "projectPath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD\\BasicCRUD.csproj",
         "packagesPath": "C:\\Users\\pca223\\.nuget\\packages\\",
-        "outputPath": "D:\\Repos\\Tutorials\\BasicCRUD\\BasicCRUD\\BasicCRUD\\obj\\",
+        "outputPath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

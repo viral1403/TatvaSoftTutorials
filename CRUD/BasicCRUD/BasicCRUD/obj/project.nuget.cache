@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Sb87iLUqMRY0f7gW2PRpJM7u7r+DxjN+vLqKVo0muBiE53nvVwotgF8Duq9B4MqZ3ZdkLE9kxZxpJCHme36JLA==",
+  "dgSpecHash": "Qz9lbwfj6JtMU9juXhYz8mwI+xscxE9cjjOhpdtnWezTtBIuIcezWKANxRloPKTmjfqh3iVx60uqn74V5sTdgw==",
   "success": true,
-  "projectFilePath": "D:\\Repos\\Tutorials\\BasicCRUD\\BasicCRUD\\BasicCRUD\\BasicCRUD.csproj",
+  "projectFilePath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD\\BasicCRUD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pca223\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\pca223\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
