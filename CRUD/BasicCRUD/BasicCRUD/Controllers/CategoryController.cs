@@ -19,14 +19,14 @@ namespace BasicCRUD.Controllers
             return View(objCategoriesList);
         }
 
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Category obj)
+        public async Task<IActionResult> Create(Category obj)
         {
             try { 
                 if(obj.Name == obj.DisplayOrder.ToString() && !string.IsNullOrEmpty(obj.Name))
@@ -49,7 +49,7 @@ namespace BasicCRUD.Controllers
             }
         }
         [HttpGet]
-        public IActionResult Edit(int ?id)
+        public async Task<IActionResult> Edit(int ?id)
         {
             if(id != 0 && id != null)
             {
@@ -64,7 +64,7 @@ namespace BasicCRUD.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Category obj)
+        public async Task<IActionResult> Edit(Category obj)
         {
             try { 
                 if (obj.Name == obj.DisplayOrder.ToString() && !string.IsNullOrEmpty(obj.Name))
@@ -88,7 +88,7 @@ namespace BasicCRUD.Controllers
         }
 
         [HttpGet]
-        public IActionResult Delete(int? id)
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id != 0 && id != null)
             {
