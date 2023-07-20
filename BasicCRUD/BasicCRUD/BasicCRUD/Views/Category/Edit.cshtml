@@ -13,12 +13,12 @@
         <div class="text-warning" asp-validation-summary="All"></div>
         <div class="mb-3">
             <label asp-for="Name"></label>
-            <input type="text" asp-for="Name" class="form-control" />
+            <input type="text" asp-for="Name" class="form-control" autocomplete="off"/>
             <span asp-validation-for="Name" class="text-danger"></span>
         </div>
         <div class="mb-3">
             <label asp-for="DisplayOrder"></label>
-            <input type="text" asp-for="DisplayOrder" class="form-control" />
+            <input type="text" asp-for="DisplayOrder" class="form-control" autocomplete="off" />
             <span asp-validation-for="DisplayOrder" class="text-danger"></span>
         </div>
         <div class="m-3">
