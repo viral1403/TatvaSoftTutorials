@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Category>
+
+@{
+    ViewData["Title"] = "Category";
+}
+
+<div class="container mt-10">
+    <div class="row">
+        <div class="col-sm-6 text-primary"><h3>Category List</h3></div>
+        <div class="col-sm-6">
+            <a asp-controller="Category" asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Create Category</a>
+        </div>
+    </div>
+</div>
+<table class="table table-bordered table-table-striped w-per-100 mt-10">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Display Order</th>
+            <th>Category Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model != null){
+            foreach(var item in Model.OrderBy(x=>x.DisplayOrder)){
+                <tr>
+                    <td class="w-20 text-center">
+                        <div class="btn btn-group" role="group">
+                            <a class="btn btn-primary" asp-controller="Category" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-fill mr-2"></i>Edit</a>
+                            <a class="btn btn-danger" asp-controller="Category" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash"></i>Delete</a>
+                        </div>
+                    </td>
+                    <td class="w-20">@item.DisplayOrder</td>
+                    <td class="w-60">@item.Name</td>
+                </tr>
+            }
+        }
+        else{
+            <tr>
+                <td colspan="2">No Categories are found.</td>
+            </tr>
+        }
+    </tbody>
+</table>
