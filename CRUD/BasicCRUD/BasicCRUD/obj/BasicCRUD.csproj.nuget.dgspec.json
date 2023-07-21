@@ -4,6 +4,181 @@
     "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD\\BasicCRUD.csproj": {}
   },
   "projects": {
+    "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.DataAccess\\BasicCRUD.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.DataAccess\\BasicCRUD.DataAccess.csproj",
+        "projectName": "BasicCRUD.DataAccess",
+        "projectPath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.DataAccess\\BasicCRUD.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\pca223\\.nuget\\packages\\",
+        "outputPath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pca223\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Models\\BasicCRUD.Models.csproj": {
+                "projectPath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Models\\BasicCRUD.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Models\\BasicCRUD.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Models\\BasicCRUD.Models.csproj",
+        "projectName": "BasicCRUD.Models",
+        "projectPath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Models\\BasicCRUD.Models.csproj",
+        "packagesPath": "C:\\Users\\pca223\\.nuget\\packages\\",
+        "outputPath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pca223\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Utility\\BasicCRUD.Utility.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Utility\\BasicCRUD.Utility.csproj",
+        "projectName": "BasicCRUD.Utility",
+        "projectPath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Utility\\BasicCRUD.Utility.csproj",
+        "packagesPath": "C:\\Users\\pca223\\.nuget\\packages\\",
+        "outputPath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Utility\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pca223\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD\\BasicCRUD.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -30,7 +205,17 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.DataAccess\\BasicCRUD.DataAccess.csproj": {
+                "projectPath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.DataAccess\\BasicCRUD.DataAccess.csproj"
+              },
+              "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Models\\BasicCRUD.Models.csproj": {
+                "projectPath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Models\\BasicCRUD.Models.csproj"
+              },
+              "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Utility\\BasicCRUD.Utility.csproj": {
+                "projectPath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Utility\\BasicCRUD.Utility.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

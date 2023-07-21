@@ -34,6 +34,9 @@
     ".NETCoreApp,Version=v6.0": {
       "BasicCRUD/1.0.0": {
         "dependencies": {
+          "BasicCRUD.DataAccess": "1.0.0",
+          "BasicCRUD.Models": "1.0.0",
+          "BasicCRUD.Utility": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Razor": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.20",
           "Microsoft.EntityFrameworkCore": "7.0.9",
@@ -3545,6 +3548,33 @@
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
+        }
+      },
+      "BasicCRUD.DataAccess/1.0.0": {
+        "dependencies": {
+          "BasicCRUD.Models": "1.0.0"
+        },
+        "runtime": {
+          "BasicCRUD.DataAccess.dll": {}
+        },
+        "compile": {
+          "BasicCRUD.DataAccess.dll": {}
+        }
+      },
+      "BasicCRUD.Models/1.0.0": {
+        "runtime": {
+          "BasicCRUD.Models.dll": {}
+        },
+        "compile": {
+          "BasicCRUD.Models.dll": {}
+        }
+      },
+      "BasicCRUD.Utility/1.0.0": {
+        "runtime": {
+          "BasicCRUD.Utility.dll": {}
+        },
+        "compile": {
+          "BasicCRUD.Utility.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery.Reference/6.0.0.0": {
@@ -7127,6 +7157,21 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "BasicCRUD.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BasicCRUD.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BasicCRUD.Utility/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery.Reference/6.0.0.0": {
       "type": "referenceassembly",

@@ -1,0 +1,11 @@
+D:\Repos\Tutorials\CRUD\BasicCRUD\BasicCRUD.Utility\bin\Debug\net6.0\BasicCRUD.Utility.deps.json
+D:\Repos\Tutorials\CRUD\BasicCRUD\BasicCRUD.Utility\bin\Debug\net6.0\BasicCRUD.Utility.dll
+D:\Repos\Tutorials\CRUD\BasicCRUD\BasicCRUD.Utility\bin\Debug\net6.0\ref\BasicCRUD.Utility.dll
+D:\Repos\Tutorials\CRUD\BasicCRUD\BasicCRUD.Utility\bin\Debug\net6.0\BasicCRUD.Utility.pdb
+D:\Repos\Tutorials\CRUD\BasicCRUD\BasicCRUD.Utility\obj\Debug\net6.0\BasicCRUD.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repos\Tutorials\CRUD\BasicCRUD\BasicCRUD.Utility\obj\Debug\net6.0\BasicCRUD.Utility.AssemblyInfoInputs.cache
+D:\Repos\Tutorials\CRUD\BasicCRUD\BasicCRUD.Utility\obj\Debug\net6.0\BasicCRUD.Utility.AssemblyInfo.cs
+D:\Repos\Tutorials\CRUD\BasicCRUD\BasicCRUD.Utility\obj\Debug\net6.0\BasicCRUD.Utility.csproj.CoreCompileInputs.cache
+D:\Repos\Tutorials\CRUD\BasicCRUD\BasicCRUD.Utility\obj\Debug\net6.0\BasicCRUD.Utility.dll
+D:\Repos\Tutorials\CRUD\BasicCRUD\BasicCRUD.Utility\obj\Debug\net6.0\ref\BasicCRUD.Utility.dll
+D:\Repos\Tutorials\CRUD\BasicCRUD\BasicCRUD.Utility\obj\Debug\net6.0\BasicCRUD.Utility.pdb

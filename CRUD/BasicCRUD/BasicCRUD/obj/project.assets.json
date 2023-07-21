@@ -4143,6 +4143,39 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "BasicCRUD.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BasicCRUD.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BasicCRUD.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BasicCRUD.DataAccess.dll": {}
+        }
+      },
+      "BasicCRUD.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BasicCRUD.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BasicCRUD.Models.dll": {}
+        }
+      },
+      "BasicCRUD.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BasicCRUD.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BasicCRUD.Utility.dll": {}
+        }
       }
     }
   },
@@ -12344,10 +12377,28 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "BasicCRUD.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../BasicCRUD.DataAccess/BasicCRUD.DataAccess.csproj",
+      "msbuildProject": "../BasicCRUD.DataAccess/BasicCRUD.DataAccess.csproj"
+    },
+    "BasicCRUD.Models/1.0.0": {
+      "type": "project",
+      "path": "../BasicCRUD.Models/BasicCRUD.Models.csproj",
+      "msbuildProject": "../BasicCRUD.Models/BasicCRUD.Models.csproj"
+    },
+    "BasicCRUD.Utility/1.0.0": {
+      "type": "project",
+      "path": "../BasicCRUD.Utility/BasicCRUD.Utility.csproj",
+      "msbuildProject": "../BasicCRUD.Utility/BasicCRUD.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BasicCRUD.DataAccess >= 1.0.0",
+      "BasicCRUD.Models >= 1.0.0",
+      "BasicCRUD.Utility >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Razor >= 2.2.0",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 6.0.20",
       "Microsoft.EntityFrameworkCore >= 7.0.9",
@@ -12387,7 +12438,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.DataAccess\\BasicCRUD.DataAccess.csproj": {
+              "projectPath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.DataAccess\\BasicCRUD.DataAccess.csproj"
+            },
+            "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Models\\BasicCRUD.Models.csproj": {
+              "projectPath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Models\\BasicCRUD.Models.csproj"
+            },
+            "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Utility\\BasicCRUD.Utility.csproj": {
+              "projectPath": "D:\\Repos\\Tutorials\\CRUD\\BasicCRUD\\BasicCRUD.Utility\\BasicCRUD.Utility.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
