@@ -1,0 +1,50 @@
+﻿@page
+@model RazorPagesCRUD.Pages.Categories.IndexModel
+
+<div class="container p-3">
+    <div class="row pt-4" style="margin-bottom:20px;">
+        <div class="col-sm-6"><h2 class="text-primary">Category List</h2></div>
+        <div class="col-sm-6">
+            <div class="float-end mt-1">
+                <a class="btn btn-primary" asp-page="Create"><i class="bi-plus-circle"></i> Create New Category</a>
+            </div>
+        </div>
+    </div>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th style="width:20%"></th>
+                <th style="width:20%" class="text-center">Display Order</th>
+                <th class="text-center">Category Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(Model.Categories != null)
+            {
+                foreach(var item in Model.Categories)
+                {
+                    <tr>
+                        <td>
+                            <div class="btn btn-group">
+                                <a class="btn btn-outline-primary" asp-page="Edit" asp-route-id="@item.Id">
+                                    <i class="bi bi-pencil-fill"></i> Edit
+                                </a>
+                                <a class="btn btn-outline-danger" asp-page="Delete" asp-route-id="@item.Id">
+                                    <i class="bi bi-trash"></i> Delete
+                                </a>
+                            </div>
+                        </td>
+                        <td class="text-center align-middle">@item.DisplayOrder</td>
+                        <td class="text-center align-middle">@item.Name</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="3">No Categories Found.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
