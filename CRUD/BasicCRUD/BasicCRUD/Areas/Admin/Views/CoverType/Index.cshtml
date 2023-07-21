@@ -1,0 +1,42 @@
+﻿@model IEnumerable<CoverType>
+
+@{
+    ViewData["Title"] = "Cover Type";
+}
+
+<div class="container mt-10">
+    <div class="row">
+        <div class="col-sm-6 text-primary"><h3>Cover Type List</h3></div>
+        <div class="col-sm-6">
+            <a asp-controller="CoverType" asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Create Cover Type</a>
+        </div>
+    </div>
+</div>
+<table class="table table-bordered table-table-striped w-per-100 mt-10">
+    <thead>
+        <tr>
+            <th style="width:20%;"></th>
+            <th>Cover Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model != null && Model.Count() > 0){
+            foreach(var item in Model){
+                <tr>
+                    <td class="w-20 text-center">
+                        <div class="btn btn-group" role="group">
+                            <a class="btn btn-primary" asp-controller="CoverType" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-fill mr-2"></i>Edit</a>
+                            <a class="btn btn-danger" asp-controller="CoverType" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash"></i>Delete</a>
+                        </div>
+                    </td>
+                    <td class="w-60 align-middle">@item.Name</td>
+                </tr>
+            }
+        }
+        else{
+            <tr>
+                <td colspan="2">No Cover Types are found.</td>
+            </tr>
+        }
+    </tbody>
+</table>

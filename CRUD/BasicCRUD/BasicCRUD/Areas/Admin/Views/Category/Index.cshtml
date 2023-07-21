@@ -21,7 +21,7 @@
         </tr>
     </thead>
     <tbody>
-        @if(Model != null){
+        @if(Model != null && Model.Count() > 0){
             foreach(var item in Model.OrderBy(x=>x.DisplayOrder)){
                 <tr>
                     <td class="w-20 text-center">

@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BasicCRUD.Models\BasicCRUD.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ef">
+      <HintPath>C:\Users\pca223\.nuget\packages\microsoft.entityframeworkcore.tools\7.0.9\tools\netcoreapp2.0\any\ef.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore">
+      <HintPath>C:\Users\pca223\.nuget\packages\microsoft.entityframeworkcore\7.0.9\lib\net6.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions">
+      <HintPath>..\BasicCRUD\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Design">
+      <HintPath>..\BasicCRUD\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational">
+      <HintPath>..\BasicCRUD\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.SqlServer">
+      <HintPath>..\BasicCRUD\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore">
+      <HintPath>..\BasicCRUD\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

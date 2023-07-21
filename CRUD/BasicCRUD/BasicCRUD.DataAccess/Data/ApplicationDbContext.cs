@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using BasicCRUD.Models;
 
-namespace BasicCRUD.Data
+namespace BasicCRUD.DataAccess
 {
     public class ApplicationDbContext : DbContext
     {
@@ -10,5 +10,7 @@ namespace BasicCRUD.Data
         }
 
         public DbSet<Category> Categories { get; set; }
+
+        public DbSet<CoverType> CoverTypes { get; set; }
     }
 }
