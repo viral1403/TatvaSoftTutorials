@@ -2,13 +2,14 @@ using BasicCRUD.DataAccess;
 using BasicCRUD.DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 using BasicCRUD.DataAccess.Repository;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 // Add application DB Context for EF Core
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
+builder.Services.AddDbContext<BasicCRUD.DataAccess.ApplicationDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")
      , x => x.MigrationsAssembly("BasicCRUD.DataAccess") // change assesmbly ref as per project migrations
     ));

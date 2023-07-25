@@ -8,5 +8,9 @@ namespace BasicCRUD.DataAccess.Repository
         public CoverTypeRepository(ApplicationDbContext db) : base(db)
         {
         }
+        public void Update(CoverType entity)
+        {
+            dbSet.Update(entity);
+        }
     }
 }

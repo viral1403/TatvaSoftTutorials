@@ -30,16 +30,30 @@ namespace BasicCRUD.DataAccess.Repository
             return dbSet.Find(id);
         }
 
-        public T FirstOrDefault(Expression<Func<T, bool>> filter)
+        public T FirstOrDefault(Expression<Func<T, bool>> filter, string? includeProperties = null)
         {
             IQueryable<T> query = dbSet;
             query = query.Where(filter);
+            if (includeProperties != null)
+            {
+                foreach (var includeProps in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProps);
+                }
+            }
             return query.FirstOrDefault();
         }
 
-        public IEnumerable<T> GetAll()
+        public IEnumerable<T> GetAll(string? includeProperties = null)
         {
             IQueryable<T> query = dbSet;
+            if(includeProperties != null)
+            {
+                foreach(var includeProps in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProps);
+                }
+            }
             return query.ToList();
         }
 
@@ -58,11 +72,6 @@ namespace BasicCRUD.DataAccess.Repository
             IQueryable<T> query = dbSet;
             query = query.Where(filter);
             return query.SingleOrDefault();
-        }
-
-        public void Update(T entity)
-        {
-            dbSet.Update(entity);
         }
     }
 }

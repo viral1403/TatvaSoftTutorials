@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Product";
+}
+
+<div class="container mt-10">
+    <div class="row">
+        <div class="col-sm-6 text-primary"><h3>Product List</h3></div>
+        <div class="col-sm-6">
+            <a asp-controller="Product" asp-action="Upsert" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Create Product</a>
+        </div>
+    </div>
+</div>
+<table class="table table-bordered table-table-striped w-per-100 mt-10" id="tblProductGrid">
+    <thead>
+        <tr>
+            <th></th>
+            <th title="Title">Title</th>
+            <th title="ISBN">ISBN</th>
+            <th title="Author">Author</th>
+            <th title="Price">Price</th>
+            <th title="Category">Category</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script src="~/js/Product.js"></script>

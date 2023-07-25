@@ -15,5 +15,9 @@ namespace BasicCRUD.DataAccess.Repository
         {
             _db =db;
         }
+        public void Update(Category entity)
+        {
+            dbSet.Update(entity);
+        }
     }
 }

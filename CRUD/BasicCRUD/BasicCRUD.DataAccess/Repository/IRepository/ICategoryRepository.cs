@@ -10,7 +10,6 @@ namespace BasicCRUD.DataAccess.Repository.IRepository
 {
     public interface ICategoryRepository : IRepository<Category>
     {
-        IEnumerable<Category> GetAll();
         void Add(Category entity);
 
         void Remove(Category entity);

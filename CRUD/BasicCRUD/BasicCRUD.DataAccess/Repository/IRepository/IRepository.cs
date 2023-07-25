@@ -9,11 +9,10 @@ namespace BasicCRUD.DataAccess.Repository.IRepository
 {
     public interface IRepository<T> where T : class
     {
-        IEnumerable<T> GetAll();
+        IEnumerable<T> GetAll(string? includeProperties = null);
         T FindEntity(int id);
-        T FirstOrDefault(Expression<Func<T,bool>> filter);
+        T FirstOrDefault(Expression<Func<T, bool>> filter, string? includeProperties = null);
         T SingleOrDefault(Expression<Func<T, bool>> filter);
-        void Update(T entity);
         void Add(T entity);
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entity);
