@@ -31,7 +31,7 @@ function loadProductGridDataTable() {
 function DeleteProduct(url) {
     Swal.fire({
         title: "Confirmation",
-        text: "Are you sure, you want to delete this Product?",
+        text: "Are you sure, you want to delete this Record?",
         icon: "warning",
         showCancelButton: true,
         confirmButtonColor: "#3085d6",

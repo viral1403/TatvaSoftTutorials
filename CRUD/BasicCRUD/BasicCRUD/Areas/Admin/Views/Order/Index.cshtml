@@ -1,0 +1,75 @@
+﻿@{
+    var status = Context.Request.Query["status"];
+    var pending = "text-primary";
+    var inprocess = "text-primary";
+    var completed = "text-primary";
+    var all = "text-primary";
+    var approved = "text-primary";
+
+    switch (status)
+    {
+        case "pending":
+            pending = "text-white active";
+            break;
+        case "inprocess":
+            inprocess = "text-white active";
+            break;
+        case "completed":
+            completed = "text-white active";
+            break;
+        case "approved":
+            approved = "text-white active";
+            break;
+        default:
+            all = "text-white active";
+            break;
+    }
+}
+
+<div class="p-3">
+    <div class="d-flex justify-content-between pt-4">
+        <div class="p-2">
+            <h3>Order List</h3>
+        </div>
+        <div class="p-2">
+            <ul class="list-group list-group-horizontal-sm">
+                <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="inprocess">
+                    <li class="list-group-item @inprocess">In Process</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="pending">
+                    <li class="list-group-item @pending">Payment Pending</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="completed">
+                    <li class="list-group-item @completed">Completed</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="approved">
+                    <li class="list-group-item @approved">Approved</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="all">
+                    <li class="list-group-item @all">All</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<table class="table table-bordered table-table-striped w-per-100 mt-10" id="tblOrderDetails">
+    <thead>
+        <tr>
+            <th title="Id">Id</th>
+            <th title="Name">Name</th>
+            <th title="Phone Number">Phone Number</th>
+            <th title="Email">Email</th>
+            <th title="Order Status">Order Status</th>
+            <th title="Order Total">Order Total</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+@section Scripts{
+    @{
+        <script src="~/js/Order.js"></script>
+    }
+}

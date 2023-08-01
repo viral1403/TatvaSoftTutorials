@@ -2,10 +2,13 @@
 using BasicCRUD.DataAccess;
 using BasicCRUD.Models;
 using BasicCRUD.DataAccess.Repository.IRepository;
+using BasicCRUD.Utility;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BasicCRUD.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _db;

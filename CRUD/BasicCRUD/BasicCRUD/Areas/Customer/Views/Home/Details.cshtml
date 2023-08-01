@@ -1,15 +1,17 @@
 ﻿@model ShoppingCart
 
-<form method="post">
+<form method="post" asp-action="Details">
     <div class="card container">
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="ProductId" />
         <div class="card-header bg-primary text-light ml-0 row">
             <div class="col-12 col-md-6">
-                <h1 class="text-white-50">@Model.Product.Title</h1>
-                <p class="text-warning">by @Model.Product.Author</p>
+                <h1 class="text-white-50">@Model.Products.Title</h1>
+                <p class="text-warning">by @Model.Products.Author</p>
             </div>
             <div class="col-12 col-md-6 text-end pt-4">
-                <span class='badge bg-info p-2'>@Model.Product.CoverType.Name</span>
-                <span class="badge bg-warning p-2">@Model.Product.Category.Name</span>
+                <span class='badge bg-info p-2'>@Model.Products.CoverType.Name</span>
+                <span class="badge bg-warning p-2">@Model.Products.Category.Name</span>
             </div>
         </div>
         <div class="card-body row container">
@@ -17,10 +19,10 @@
                 <div class="row">
                     <div class="col-8 col-lg-8">
                         <div class="row pl-2">
-                            <h5 class="text-muted">ISBN: @Model.Product.ISBN</h5>
+                            <h5 class="text-muted">ISBN: @Model.Products.ISBN</h5>
                         </div>
                         <div class="row pl-2">
-                            <h5 class="text-muted pb-2">List Price: <strike><b>@Model.Product.ListPrice.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-us"))</b></strike></h5>
+                            <h5 class="text-muted pb-2">List Price: <strike><b>@Model.Products.ListPrice.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-us"))</b></strike></h5>
                         </div>
 
                         <div class="row pt-2">
@@ -37,14 +39,14 @@
                             <div class="col-6 col-lg-6">
                                 <div class="row">
                                     <div class="col-3 text-danger">Price</div>
-                                    <div class="col-3 text-danger text-center">@Model.Product.Price.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-us"))</div>
-                                    <div class="col-3 text-danger text-center">@Model.Product.Price50.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-us"))</div>
-                                    <div class="col-3 text-danger text-center">@Model.Product.Price100.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-us"))</div>
+                                    <div class="col-3 text-danger text-center">@Model.Products.Price.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-us"))</div>
+                                    <div class="col-3 text-danger text-center">@Model.Products.Price50.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-us"))</div>
+                                    <div class="col-3 text-danger text-center">@Model.Products.Price100.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-us"))</div>
                                 </div>
                             </div>
                         </div>
                         <div class="row pt-2">
-                            <div class="col-12 text-muted">@Html.Raw(Model.Product.Description)</div>
+                            <div class="col-12 text-muted">@Html.Raw(Model.Products.Description)</div>
                         </div>
                         <div class="row pt-2">
                             <div class="col-12"><h4>COUNT</h4></div>
@@ -52,17 +54,15 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-3 offset-lg-1 text-cneter">
-                        <img src="@Model.Product.ImageUrl" width="100%" class="rounded" />
+                        <img src="@Model.Products.ImageUrl" width="100%" class="rounded" />
                     </div>
                 </div>
             </div>
         </div>
         <div class="card-footer row">
-            <div class="col-12">
-                <div class="btn-group">
-                    <a class="btn btn-info mx-2" asp-area="Customer" asp-controller="Home" asp-action="Index">Back To List</a>
-                    <a class="btn btn-info mx-2" asp-area="" asp-controller="" asp-action="" type="submit">Add to Cart</a>
-                </div>
+            <div class="col-12 btn-group p-0">
+                <a class="btn btn-info mx-2" asp-area="Customer" asp-controller="Home" asp-action="Index">Back To List</a>
+                <button class="btn btn-dark mx-2" type="submit">Add to Cart</button>
             </div>
         </div>
     </div>

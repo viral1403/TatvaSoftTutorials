@@ -8,12 +8,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.20" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.20" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.20" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BasicCRUD.Models\BasicCRUD.Models.csproj" />
+    <ProjectReference Include="..\BasicCRUD.Utility\BasicCRUD.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>

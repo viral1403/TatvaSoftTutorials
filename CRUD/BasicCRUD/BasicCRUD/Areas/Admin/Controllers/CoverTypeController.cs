@@ -1,10 +1,13 @@
 ﻿using BasicCRUD.DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Mvc;
 using BasicCRUD.Models;
+using Microsoft.AspNetCore.Authorization;
+using BasicCRUD.Utility;
 
 namespace BasicCRUD.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class CoverTypeController : Controller
     {
         private readonly IUnitOfWork _db;

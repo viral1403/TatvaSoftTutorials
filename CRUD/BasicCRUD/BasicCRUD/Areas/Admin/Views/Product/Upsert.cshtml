@@ -78,7 +78,7 @@
             </div>
             <div class="m-3 col-12">
                 <button type="submit" class="btn btn-primary mr-2" onclick='@(Model.Product.Id ==0 ? "return ValidateInput()":"")' >@(Model.Product.Id != 0 ? "Update" : "Add")</button>
-                <a asp-controller="Product" asp-action="Index" class="btn btn-secondary">Back to List</a>
+                <a asp-area="Admin" asp-controller="Product" asp-action="Index" class="btn btn-secondary">Back to List</a>
             </div>
         </div>
     </div>

@@ -5,10 +5,13 @@ using BasicCRUD.DataAccess.Repository.IRepository;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using BasicCRUD.Models.ViewModels;
+using BasicCRUD.Utility;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BasicCRUD.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitofwork;

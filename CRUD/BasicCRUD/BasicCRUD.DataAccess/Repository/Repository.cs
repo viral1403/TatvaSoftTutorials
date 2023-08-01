@@ -30,9 +30,17 @@ namespace BasicCRUD.DataAccess.Repository
             return dbSet.Find(id);
         }
 
-        public T FirstOrDefault(Expression<Func<T, bool>> filter, string? includeProperties = null)
+        public T FirstOrDefault(Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = true)
         {
-            IQueryable<T> query = dbSet;
+            IQueryable<T> query;
+            if (tracked)
+            {
+                query = dbSet;
+            }
+            else
+            {
+                query = dbSet.AsNoTracking();
+            }
             query = query.Where(filter);
             if (includeProperties != null)
             {
@@ -44,9 +52,13 @@ namespace BasicCRUD.DataAccess.Repository
             return query.FirstOrDefault();
         }
 
-        public IEnumerable<T> GetAll(string? includeProperties = null)
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>> filter = null, string? includeProperties = null)
         {
             IQueryable<T> query = dbSet;
+            if(filter != null)
+            {
+                query = query.Where(filter);
+            }
             if(includeProperties != null)
             {
                 foreach(var includeProps in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))

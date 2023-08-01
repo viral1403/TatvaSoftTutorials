@@ -1,11 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using BasicCRUD.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
 
 namespace BasicCRUD.DataAccess
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -16,5 +15,11 @@ namespace BasicCRUD.DataAccess
         public DbSet<CoverType> CoverTypes { get; set; }
 
         public DbSet<Product> Products { get; set; }
+
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<Company> Company { get; set; }
+        public DbSet<ShoppingCart> ShoppingCarts { get; set; }
+        public DbSet<OrderHeader> OrderHeader { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
     }
 }
